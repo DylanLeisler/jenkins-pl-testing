@@ -1,16 +1,10 @@
 pipeline {
 	
-	agent none
+	agent { dockerfile true }
 
 	stages {
 
 		stage("build") {
-			agent {
-				docker {
-					dockerfile true
-					reuseNode true
-				}
-			}
 
 			steps {
 				echo "Build stage here."
