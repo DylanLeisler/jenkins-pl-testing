@@ -14,7 +14,7 @@ pipeline {
 
 			steps {
 				echo "Build stage here."
-				ls
+				bash ls
 			}
 		}
 
@@ -23,7 +23,7 @@ pipeline {
 
 			steps {
 				echo "Testing stage here."
-				ls
+				bash ls
 			}
 		}
 
